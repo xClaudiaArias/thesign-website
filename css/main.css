@@ -1,10 +1,123 @@
-/* * { 
+* {
   padding: 0;
   margin: 0;
-} */
-
-#slider {
-  width: 100vw;
-  height: 416px;
-  background-color: blue;
+  font-family: "Open Sans", sans-serif;
 }
+
+/* hidden elements  */
+#hire-drop,
+#teach-drop,
+#tuts-drop,
+#community-drop {
+  display: none;
+}
+
+nav #logo {
+  color: #0085ff;
+  text-decoration: line-through;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav,
+#btm-nav {
+  width: 1400px;
+  height: 50px;
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a,
+#btm-nav-ul li a {
+  text-decoration: none;
+  color: #7d7d7d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav ul li button {
+  width: 112px;
+  height: 30px;
+  background-color: #0085ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(74, 74, 74, 0.16);
+}
+
+#btm-nav {
+  border: none;
+  height: 55px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: flex-end;
+}
+
+#btm-nav-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding-right: 10px;
+}
+
+#btm-nav-ul li {
+  list-style-type: none;
+}
+
+#btm-nav-ul li a {
+  font-weight: 400;
+  color: #949494;
+  text-decoration: underline;
+}
+
+#btm-nav #btm-nav-ul #log #login {
+  font-weight: 600;
+  color: #7d7d7d;
+}
+
+#btm-nav form {
+  width: 600px;
+  height: 40px;
+  position: relative;
+}
+
+#btm-nav form input[type="text"] {
+  width: 534px;
+  height: 38px;
+  border-radius: 50px;
+  border: 1px solid #d2d2d2;
+}
+
+#btm-nav form input[type="text"]::placeholder {
+  color: #d2d2d2;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+#mg {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+/* -------------- */
+
+/* #slider {
+  width: 100vw;
+  height: 433px;
+  background-color: blue;
+} */
