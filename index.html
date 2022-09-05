@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>thesign</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thesign</title>
+    <!-- note:  -->
+    <!-- add favicon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- 
 
   <nav>
     <p>LOGO</p>
@@ -38,15 +43,264 @@
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#artists-blogs">Artists' blogs</a></li>
             <li><a href="#empl-boards">Employer blogs</a></li>
-            <!-- this is a button 👇 -->
+            this is a button 👇
             <li><a href="#join">Join the community</a></li> 
           </ul>
-          <!-- 👆 space between this 👇  -->
+          👆 space between this 👇 
         <li><a href="#signin">Sign in</a></li>
       </ul>
       <button>Create</button>
     </div>
   </nav>
-  
-</body>
+
+  --->
+
+    <nav>
+      <span>LOGO</span>
+      <ul id="nav-ul">
+        <li>
+          <a href="#hire">Hire Artists</a>
+          <ul id="hire-drop">
+            <li><a href="#create-empl-prof">Become an Employer</a></li>
+            <li><a href="#job-board">Job Board</a></li>
+            <li><a href="#freelance">Freelance Options</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#teach">Teach</a>
+          <ul id="teach-drop">
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#become-teacher">Become a teacher</a></li>
+          </ul>
+        </li>
+        <li><a href="#create">Create</a></li>
+        <li><button id="sign-up">Sign Up</button></li>
+      </ul>
+      <div id="btm-nav">
+        <form action="">
+          <span><i class="icon-magnifying"></i></span>
+          <input
+            type="text"
+            name="explore"
+            id="explore"
+            placeholder="explore"
+          />
+        </form>
+        <ul id="btm-nav-ul">
+          <li>
+            <a href="#tutorials">Tutorials</a>
+            <ul id="tutorials">
+              <li><a href="#ed-boards">Education board</a></li>
+              <li><a href="#search-tuts">Search tutorials</a></li>
+              <li><a href="#browse-wk">Browse workshops</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#community">Community</a>
+            <ul id="community-drop">
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#artists-blogs">Artists' blogs</a></li>
+              <li><a href="#empl-boards">Employer blogs</a></li>
+              <!-- this is a button 👇 -->
+              <li><a href="#join">Join the community</a></li>
+            </ul>
+          </li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div id="slider">
+        <div id="slider-imgs">
+          <img class="slide-img" src="" alt="" />
+          <img class="slide-img" src="" alt="" />
+          <img class="slide-img" src="" alt="" />
+        </div>
+        <!-- gradient 👇 -->
+        <div id="fader"></div>
+      </div>
+      <!-- ✨ artist corner  -->
+      <section id="artist-corner">
+        <h1>Artist Corner</h1>
+        <form action="">
+          <span><i class="icon-magnifying"></i></span>
+          <input
+            type="text"
+            name="Search more artworks"
+            id="Search more artworks"
+            placeholder="Search your favorite artists"
+          />
+        </form>
+
+        <h2>Trending Artists</h2>
+
+        <div id="artists-container">
+          <div id="artist">
+            <div id="art-fader"></div>
+            <div id="artist-info">
+              <span>Maya Sui</span>
+              <span>3D Designer</span>
+              <p>New York</p>
+              <p>
+                Hello, everyone! I am a freelance designer based in NYC. I am
+                currently working on illustrating my mind with shapes, colors
+                and fluidity. Join me on my journey to self discovery!
+              </p>
+            </div>
+          </div>
+
+          <div id="artist">
+            <div id="art-fader"></div>
+            <div id="artist-info">
+              <span>Hector Shwatz</span>
+              <span>Cartoonist</span>
+              <p>Seattle, WA</p>
+              <p>
+                Hi there, I'm Hector. Currently working at Tooonz Studios, but I
+                also do some freelance work. I also On my profile, you can find
+                my information to coontact me for any inquiries. Stay cool.
+              </p>
+            </div>
+          </div>
+
+          <div id="artist">
+            <div id="art-fader"></div>
+            <div id="artist-info">
+              <span>Ian</span>
+              <span>Sanchez</span>
+              <p>El Salvador</p>
+              <p>
+                Hola! My family knows me as the person who is always the last to
+                arrive at a party, and the last one to leave. I enjoy holding on
+                life's beautiful moments and I am here to share those with you.
+                Empezemos esta aventura!
+              </p>
+            </div>
+          </div>
+
+          <div id="artist">
+            <div id="art-fader"></div>
+            <div id="artist-info">
+              <span>Monika Hamiltion</span>
+              <span>Animator</span>
+              <p>Toronto, CA</p>
+              <p>
+                As someone who enjoys every aspect of animation, I am pretty
+                animated myself. Always looking for the best things and finding
+                beauty in life in motion. Open to freelance!
+              </p>
+            </div>
+          </div>
+
+          <button id="find-more">Find More</button>
+        </div>
+      </section>
+
+      <section id="community-art">
+        <h1>Art From Our Community</h1>
+        <form action="">
+          <span><i class="icon-magnifying"></i></span>
+          <input
+            type="text"
+            name="Search more artworks"
+            id="Search more artworks"
+            placeholder="Search more artworks"
+          />
+        </form>
+
+        <div id="comm-img-container">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <article id="trending-search">
+        <div class="trend-img"><span>Photography</span></div>
+        <div class="trend-img"><span>Animation</span></div>
+        <div class="trend-img"><span>3D Modeling</span></div>
+        <div class="trend-img"><span>Motion Graphics</span></div>
+        <div class="trend-img"><span>Illustration</span></div>
+        <div class="trend-img"><span>Graphic Design</span></div>
+        <div class="trend-img"><span>Pottery</span></div>
+      </article>
+    </main>
+
+    <section id="brands-container">
+      <h1>Brands That Trust THESIGN Artists</h1>
+
+      <div class="brands"></div>
+      <div class="brands"></div>
+      <div class="brands"></div>
+      <div class="brands"></div>
+      <div class="brands"></div>
+      <div class="brands"></div>
+      <div class="brands"></div>
+    </section>
+
+    <footer>
+      <p>LOGO</p>
+      <div id="foot1">
+        <p>A site for creatives like you!</p>
+        <p>Stay informed and up to date by following us on our social media!</p>
+
+        <div id="socials">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="foot2">
+        <div id="ft1">
+          <ul>
+            <li>About</li>
+            <li>FAQ</li>
+            <li>Help</li>
+          </ul>
+        </div>
+        <div id="ft2">
+          <ul>
+            <li>Donate</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div id="ft3">
+          <ul>
+            <li>Cookies</li>
+            <li>Privacy</li>
+            <li>Terms Of Service</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="foot3">
+        <h3>Let us inform you on our brightest designs!</h3>
+        <p id="subscribe">Subscribe to our email</p>
+        <form action="">
+          <input
+            type="email"
+            name="subscribe"
+            id="subscribe"
+            placeholder="Enter your email"
+          />
+          <button type="button" id="subs-btn">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
