@@ -4,12 +4,45 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* hidden elements  */
 #hire-drop,
 #teach-drop,
 #tuts-drop,
 #community-drop {
-  display: none;
+  top: 55px;
+  padding: 10px;
+  width: 160px;
+  height: 180px;
+  background-color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: #0085ff 2px solid;
+}
+
+#hire-drop,
+#teach-drop {
+  top: 50px;
+}
+
+#teach-drop {
+  justify-content: flex-start;
+  height: 80px;
+}
+
+#tuts-drop {
+  height: 130px;
+}
+
+#hire-drop li,
+#teach-drop li,
+#tuts-drop li,
+#community-drop li {
+  padding: 10px;
 }
 
 nav #logo,
@@ -34,6 +67,10 @@ nav,
   z-index: 10;
 }
 
+#btm-nav {
+  z-index: 9;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -53,6 +90,10 @@ nav ul li a,
   font-weight: 500;
 }
 
+nav ul li a:hover {
+  color: #0085ff;
+}
+
 nav ul li button,
 #subs-btn {
   width: 112px;
@@ -63,6 +104,17 @@ nav ul li button,
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(74, 74, 74, 0.16);
   display: block;
+}
+
+nav ul li button:hover,
+#subs-btn:hover {
+  background-color: #50aaff;
+  color: #fff;
+}
+
+#hire-drop li,
+#teach-drop li a {
+  text-decoration: underline;
 }
 
 #btm-nav {
@@ -89,9 +141,17 @@ nav ul li button,
   text-decoration: underline;
 }
 
+#btm-nav-ul li a:hover {
+  color: #0085ff;
+}
+
 #btm-nav #btm-nav-ul #log #login {
   font-weight: 600;
   color: #7d7d7d;
+}
+
+#btm-nav #btm-nav-ul #log #login:hover {
+  color: #0085ff;
 }
 
 #btm-nav form,
@@ -108,11 +168,19 @@ nav ul li button,
   border: 1px solid #d2d2d2;
 }
 
+#btm-nav form input[type="text"]:hover {
+  background-color: #f5f5f5;
+}
+
 #btm-nav form input[type="text"]::placeholder {
   color: #d2d2d2;
   font-weight: 600;
   font-size: 14px;
   padding-left: 40px;
+}
+
+#btm-nav form input[type="text"]:hover {
+  color: #cecece;
 }
 
 #mg {
@@ -174,6 +242,12 @@ main {
   border: 1px solid #484848;
   background-color: #0f0f0f;
   margin-left: 38px;
+}
+
+#artist-corner form input[type="text"]:hover,
+#community-art form input[type="text"]:hover {
+  border: 1px solid #414141;
+  background-color: #080808;
 }
 
 #artist-corner form input[type="text"]::placeholder,
@@ -605,6 +679,12 @@ footer {
   font-size: 14px;
 }
 
+#ft1 ul li a:hover,
+#ft2 ul li a:hover,
+#ft3 ul li a:hover {
+  color: #0085ff;
+}
+
 #socials {
   display: flex;
   justify-content: space-around;
@@ -652,6 +732,10 @@ footer {
   border: none;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
   margin-right: 10px;
+}
+
+#foot3 form input:hover {
+  background-color: #f5f5f5;
 }
 
 #foot3 form input::placeholder {
