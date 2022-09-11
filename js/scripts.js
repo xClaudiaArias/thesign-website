@@ -41,10 +41,18 @@ dr_btn.forEach((btn) => {
   });
 });
 
-// tuts_btn.addEventListener("mouseover", function () {
-//   tuts_drop.style.display = "block";
-// });
+// ---------------------------- SLIDER
 
-// community_btn.addEventListener("mouseover", function () {
-//   community_drop.style.display = "block";
-// });
+let slider = document.getElementById("slider");
+// buttons
+let left_btn = document.getElementById("left");
+let right_btn = document.getElementById("right");
+// images container
+let slider_imgs = document.getElementById("slider-imgs");
+// images
+let slide_img = document.querySelectorAll(".slide-img");
+// dots
+let dots = document.querySelectorAll(".dot");
+let d1 = document.getElementById("d1");
+let d2 = document.getElementById("d2");
+let d3 = document.getElementById("d3");
