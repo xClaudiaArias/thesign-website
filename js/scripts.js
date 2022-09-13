@@ -56,3 +56,17 @@ let dots = document.querySelectorAll(".dot");
 let d1 = document.getElementById("d1");
 let d2 = document.getElementById("d2");
 let d3 = document.getElementById("d3");
+
+// function slideShow() {
+//   let index = 1;
+
+//   left_btn.addEventListener("click", function() {
+//     slider_imgs.forEach((slide, i) => {
+//       con
+//     })
+//   })
+// }
+
+slider_img.forEach((slide, i) => {
+  console.log(slide, i, " :slide, i");
+});
