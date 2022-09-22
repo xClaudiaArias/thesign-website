@@ -56,17 +56,50 @@ let dots = document.querySelectorAll(".dot");
 let d1 = document.getElementById("d1");
 let d2 = document.getElementById("d2");
 let d3 = document.getElementById("d3");
+// seperate imgs
+let img1 = document.querySelector(".img1");
+let img2 = document.querySelector(".img2");
+let img3 = document.querySelector(".img3");
 
-// function slideShow() {
-//   let index = 1;
+let index = 1;
+slide_img[index].style.display = "block";
 
-//   left_btn.addEventListener("click", function() {
-//     slider_imgs.forEach((slide, i) => {
-//       con
-//     })
-//   })
-// }
+// ------ right btn slide
 
-slider_img.forEach((slide, i) => {
-  console.log(slide, i, " :slide, i");
+right_btn.addEventListener("click", function () {
+  index++;
+
+  if (index >= slide_img.length) {
+    index = 0;
+  }
+  let next_img = slide_img[index];
+
+  slide_img.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  console.log(index, " index TOP");
+  console.log(index, " index BOTTOM");
+
+  console.log(next_img, " next_img");
+  next_img.style.display = "block";
+});
+
+// ------ left btn slide
+
+left_btn.addEventListener("click", function () {
+  index--;
+
+  if (index < 0) {
+    index = 2;
+  }
+  let prev_img = slide_img[index];
+
+  slide_img.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  console.log(index, " index TOP");
+  console.log(index, " index BOTTOM");
+
+  console.log(prev_img, " prev_img");
+  prev_img.style.display = "block";
 });
