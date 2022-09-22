@@ -47,6 +47,7 @@ let slider = document.getElementById("slider");
 // buttons
 let left_btn = document.getElementById("left");
 let right_btn = document.getElementById("right");
+let slideBtns = document.querySelectorAll(".slide-btns");
 // images container
 let slider_imgs = document.getElementById("slider-imgs");
 // images
@@ -64,42 +65,24 @@ let img3 = document.querySelector(".img3");
 let index = 1;
 slide_img[index].style.display = "block";
 
-// ------ right btn slide
-
-right_btn.addEventListener("click", function () {
-  index++;
+const slideShow = (e) => {
+  if (e.id === "left") {
+    index--;
+  } else {
+    index++;
+  }
 
   if (index >= slide_img.length) {
     index = 0;
-  }
-  let next_img = slide_img[index];
-
-  slide_img.forEach((slide) => {
-    slide.style.display = "none";
-  });
-  console.log(index, " index TOP");
-  console.log(index, " index BOTTOM");
-
-  console.log(next_img, " next_img");
-  next_img.style.display = "block";
-});
-
-// ------ left btn slide
-
-left_btn.addEventListener("click", function () {
-  index--;
-
-  if (index < 0) {
+  } else if (index < 0) {
     index = 2;
   }
-  let prev_img = slide_img[index];
+
+  let current_img = slide_img[index];
 
   slide_img.forEach((slide) => {
     slide.style.display = "none";
   });
-  console.log(index, " index TOP");
-  console.log(index, " index BOTTOM");
 
-  console.log(prev_img, " prev_img");
-  prev_img.style.display = "block";
-});
+  current_img.style.display = "block";
+};
