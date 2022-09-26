@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 #hire-drop,
@@ -31,15 +32,15 @@
 
 #teach-drop {
   justify-content: flex-start;
-  height: 80px;
+  height: 100px;
 }
 
 #tuts-drop {
-  height: 130px;
+  height: 170px;
 }
 
 #community-drop {
-  height: 120px;
+  height: 150px;
 }
 
 #hire-drop li,
@@ -59,7 +60,6 @@ nav #logo,
 
 nav,
 #btm-nav {
-  width: 1400px;
   height: 50px;
   background-color: white;
   border-bottom: 1px solid #eeeeee;
@@ -204,14 +204,12 @@ main {
 
 #dots {
   position: absolute;
-  width: 180px;
-  height: 20px;
   z-index: 10;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  left: 620px;
   top: 400px;
+  min-width: 100%;
 }
 
 #dots .dot {
@@ -222,6 +220,7 @@ main {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   z-index: 10;
+  margin-left: 10px;
 }
 
 #dots .dot:hover {
@@ -230,12 +229,12 @@ main {
 
 #arrows {
   position: absolute;
-  width: 1400px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   top: 200px;
-  left: 10px;
+  min-width: 100%;
 }
 
 #arrows #left,
@@ -336,7 +335,6 @@ main {
 }
 
 #artists-container {
-  width: 1400px;
   margin: 70px auto;
   display: flex;
   justify-content: space-around;
@@ -437,8 +435,8 @@ main {
 /* COMMUNIITY ART  */
 
 #community-art {
-  width: 1400px;
-  margin-left: 12px;
+  max-width: 100%;
+  padding: 10px;
 }
 
 #community-art h1 {
@@ -450,7 +448,6 @@ main {
 }
 
 #comm-img-container {
-  width: 1400px;
   height: 1400px;
   display: grid;
   grid-template-areas:
@@ -546,7 +543,6 @@ main {
 }
 
 #trending-search {
-  width: 1400px;
   margin-left: 20px;
   margin-top: 50px;
   padding-bottom: 50px;
@@ -691,7 +687,7 @@ main {
 
 footer {
   height: 250px;
-  padding: 20px;
+  padding: 20px 20px 0;
   background-color: #f3f3f3;
   display: flex;
   justify-content: space-between;
@@ -715,6 +711,7 @@ footer {
 }
 
 #foot1 #ft-desc {
+  padding-top: 10px;
   width: 260px;
   font-size: 16px;
 }
@@ -726,15 +723,15 @@ footer {
 }
 
 #foot2 {
-  padding: 0 50px;
+  flex: 1;
+  padding: 0 40px;
   display: flex;
-  flex: 2;
   justify-content: space-around;
 }
 
 #foot3 {
-  width: 500px;
   flex: 1;
+  padding-left: 30px;
 }
 
 #ft1 ul li,
@@ -755,11 +752,11 @@ footer {
 
 #socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 260px;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #socials div {
